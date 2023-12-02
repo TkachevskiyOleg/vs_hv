@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий формат</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    
+        .book-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60rem; /* Ширина контейнера в 9 разів менша за висоту */
+            height: 70rem; /* Висота контейнера */
+            position: relative;
+        }
+    
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+    
+        p {
+            line-height: 1.6;
+            color: #555;
+            writing-mode: horizontal-tb;
+            transform: rotate(0deg);
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: row; /* Зміна напрямку на рядок */
+            align-items: center;
+        }
+    
+        li {
+            margin: 10px;
+            font-size: 24px; /* Збільшити розмір шрифту стрілок */
+            cursor: pointer; /* Змінити курсор при наведенні */
+        }
+    
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .book-cover {
+            width: 100%; /* Ширина зображення на всю ширину контейнера */
+            max-height: 300px; /* Максимальна висота зображення */
+            object-fit: cover; /* Заповнення відображення об'єкта в контейнері */
+            border-radius: 10px; /* Закруглені кути */
+            margin-bottom: 20px; /* Відстань від зображення до тексту */
+        }
+
+        .arrow-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .arrow {
+            font-size: 24px;
+            cursor: pointer; /* Змінити курсор при наведенні */
+        }
+
+        .prev {
+            margin-right: 20px;
+        }
+
+        .next {
+            margin-left: 20px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="book-container">
+        <img class="book-cover" src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/8a4/ba9/fec/8a4ba9fece64df495770fc9a5bcd1300.png">
+        <h2>Назва мови</h2>
+        <p>Назва «Сі шарп» (від англ. sharp — діез) походить від літерної музичної нотації , де латинській літері C відповідає нота До , а знак діез (англ. sharp) означає підвищення відповідного ноті звуку на півтон [7] , що аналогічно назві мови C++ , де "++" позначає інкремент змінної . Назва також є грою з ланцюжком C → C++ → C++++(C#), оскільки символ «#» можна уявити з 4 знаків «+» [8] .
+        Через технічні обмеження на відображення (стандартні шрифти, браузери і т.д.), а також через те, що знак дієза ♯ не представлений на стандартній клавіатурі комп'ютера , під час запису імені мови програмування використовують знак решітки (#) [9] ] . Ця угода відображена у Специфікації мови C# ECMA-334 [10] . Тим не менш, на практиці (наприклад, при розміщенні реклами та коробковому дизайні [11] ), «Майкрософт» використовує знак дієза.
+        Назви мов програмування не прийнято перекладати, тому мову називають, використовуючи транскрипцію, - Сі шарп.</p>
+            
+        <div class="arrow-container">
+            <div class="arrow prev"><a href="task2.html">&lt;</a></div>
+            <ul>
+                <li><a href="task1.html">1</a></li>
+                <li><a href="task2.html">2</a></li>
+                <li><a href="task3.html">3</a></li>
+            </ul>
+            <div class="arrow next"><a href="task1.html">&gt;</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

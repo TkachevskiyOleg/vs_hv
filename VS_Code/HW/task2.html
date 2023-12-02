@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий формат</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    
+        .book-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60rem; /* Ширина контейнера в 9 разів менша за висоту */
+            height: 70rem; /* Висота контейнера */
+            position: relative;
+        }
+    
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+    
+        p {
+            line-height: 1.6;
+            color: #555;
+            writing-mode: horizontal-tb;
+            transform: rotate(0deg);
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: row; /* Зміна напрямку на рядок */
+            align-items: center;
+        }
+    
+        li {
+            margin: 10px;
+            font-size: 24px; /* Збільшити розмір шрифту стрілок */
+            cursor: pointer; /* Змінити курсор при наведенні */
+        }
+    
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .book-cover {
+            width: 100%; /* Ширина зображення на всю ширину контейнера */
+            max-height: 300px; /* Максимальна висота зображення */
+            object-fit: cover; /* Заповнення відображення об'єкта в контейнері */
+            border-radius: 10px; /* Закруглені кути */
+            margin-bottom: 20px; /* Відстань від зображення до тексту */
+        }
+
+        .arrow-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .arrow {
+            font-size: 24px;
+            cursor: pointer; /* Змінити курсор при наведенні */
+        }
+
+        .prev {
+            margin-right: 20px;
+        }
+
+        .next {
+            margin-left: 20px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="book-container">
+        <img class="book-cover" src="https://i.ytimg.com/vi/3FWqP80fNJM/maxresdefault.jpg">
+        <h2>Особливості мови</h2>
+        <p>С# розроблявся як мова програмування прикладного рівня для CLR і, як такої, залежить,
+            перш за все, від можливостей самої CLR. Це стосується, перш за все, системи типів С#,
+            яка відображає BCL . Присутність або відсутність тих чи інших виразних особливостей 
+            мови диктується тим, чи конкретна мовна особливість може бути трансльована у відповідні 
+            конструкції CLR. Так, з розвитком CLR від версії 1.1 до 2.0 значно збагатився сам C#; 
+            подібної взаємодії слід очікувати і надалі (проте, ця закономірність була порушена з 
+            виходом C# 3.0, що є розширення мови, що не спираються на розширення платформи .NET). 
+            CLR надає C#, як і всім іншим .NET -орієнтованим мовам, багато можливостей, яких позбавлені 
+            «класичні» мови програмування. Наприклад, складання сміття не реалізована в самому C#, а 
+            виробляється CLR для програм, написаних на C#, так само, як це робиться для програм на VB.NET , J# та ін.</p>
+            
+        <div class="arrow-container">
+            <div class="arrow prev"><a href="task1.html">&lt;</a></div>
+            <ul>
+                <li><a href="task1.html">1</a></li>
+                <li><a href="task2.html">2</a></li>
+                <li><a href="task3.html">3</a></li>
+            </ul>
+            <div class="arrow next"><a href="task3.html">&gt;</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
